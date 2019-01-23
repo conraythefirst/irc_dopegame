@@ -21,6 +21,7 @@ tie (%dgstor, 'GDBM_File', "dgstorage", &GDBM_WRCREAT, 0640) or die "loading dgs
 tie (%dgstash, 'GDBM_File', "dgstash", &GDBM_WRCREAT, 0640) or die "loading dgstash: $!\n";
 tie (%dgmarket, 'GDBM_File', "dgmarket", &GDBM_WRCREAT, 0640) or die "loading dgmarket: $!\n";
 tie (%dghidden, 'GDBM_File', "dghidden", &GDBM_WRCREAT, 0640) or die "loading dghidden: $!\n";
+tie (%dgbitches, 'GDBM_File', "dgbitches", &GDBM_WRCREAT, 0640) or die "loading dgbitches: $!\n";
 
 my %places = (
     #place => amount of drugs
